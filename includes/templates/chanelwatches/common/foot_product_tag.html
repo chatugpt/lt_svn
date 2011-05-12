@@ -1,0 +1,18 @@
+<!--bof-ip address display -->
+
+<!--bof RSS Feed -->
+<!-- <div id="RSSFeedLink"><?php echo rss_feed_link(RSS_ICON); ?></div> -->
+<!--eof RSS Feed -->
+
+<!-- bof productTags-->
+<div class="b g_t_c black">Product Tags: 
+<?php
+// display productTagList
+foreach(range('a', 'z') as $letter) {
+    echo '<a class="blue b_" target="_top" href="' . HTTP_SERVER.DIR_WS_CATALOG.'producttags/'.strtoupper($letter).'/" >'.strtoupper($letter).'</a> ';
+}
+echo '<a class="blue b_" target="_top" href="' . HTTP_SERVER.DIR_WS_CATALOG.'producttags/0-9/" >0-9</a> ';
+//echo '<a class="blue b_" target="_top" href="' . HTTP_SERVER.DIR_WS_CATALOG.'wishlist/" >WishList</a> ';
+?> 
+</div>
+<!-- bof productTags-->

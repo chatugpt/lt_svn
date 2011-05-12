@@ -1,0 +1,91 @@
+.index_ad {
+position:relative;
+z-index:1;
+width:535px;
+height:200px;
+overflow:hidden;
+}
+
+.index_ad ul {
+position:relative;
+}
+
+.index_ad ul.index_ad_img li {
+position:absolute;
+z-index:1;
+visibility:hidden;
+}
+
+.index_ad ul.index_ad_img li.first {
+z-index:2;
+visibility:visible;
+}
+
+.index_ad ul.index_ad_btn {
+position:absolute;
+z-index:2;
+right:3px;
+bottom:3px;
+color:#fff;
+height:20px;
+line-height:20px;
+}
+
+.index_ad ul.index_ad_btn li {
+float:left;
+background:#fff;
+width:28px;
+height:18px;
+line-height:18px;
+margin:0 1px;
+font-size:12px;
+overflow:hidden;
+color:#B3B3B3;
+text-align:center;
+cursor:pointer;
+border:1px solid #F3F3F3
+}
+
+.index_ad ul.index_ad_btn li.first {
+background:#C5C5C3;
+color:#fff;
+font-weight:bold;
+}
+
+/*bof languages*/
+.languages {
+	position:absolute;
+	top:40px;
+	right:320px;
+	font-weight:320px;
+	color:#A72D2C;
+	font-weight:bold;
+	font-size:12px;
+}
+/*eof languages*/
+
+/*header*/
+#header_nav {
+	float:left;
+	width:100%;
+}
+/*header*/
+#category_menu ul li button{
+	padding:0px;
+}
+#min_price{
+	width:30px;
+}
+.br_none br{ 
+	display:none;
+}
+.pad_c{ 
+	padding-left:5px; 
+	color:#A72D2C;
+}
+#NewArrivals .del br{ 
+	display:none;
+}
+#NewArrivals .del span{ 
+	padding-left:0px;
+}

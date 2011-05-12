@@ -1,0 +1,28 @@
+fieldset {display:block; background: #fff; border:1px solid #B6ABD5; padding:5px; font-family:verdana, sans-serif; }
+legend {font-family:verdana, arial, helvetica, sans-serif; font-size:1.1em; color: #000; font-weight:bold; margin-bottom:5px; padding:3px; background:#fff;}
+select {margin:0;background:#fff;}
+textarea {margin: auto; padding:0.5em; float: left;	display: block; width: 75%; border:1px solid #B6ABD5; overflow:auto; background:#fff;}
+option {background:#fff; color:#000;}
+optgroup {background:#fff; color:#000; font-family:verdana, arial, helvetica, sans-serif;}
+optgroup option {background:#fff; color:navy;}
+
+label.inputLabel {
+	width: 11em;
+	float: left;
+	color: #000;
+	}
+	
+input:focus, select:focus, textarea:focus {
+	background: #fff;
+	}
+		
+.hiddenField {
+	display: none;
+}	
+LABEL.checkboxLabel, LABEL.radioButtonLabel {
+	margin: 0.5em 0.3em;
+	color: #000;
+	}
+	#popupLinksHelp {
+	background: #FFF;
+}

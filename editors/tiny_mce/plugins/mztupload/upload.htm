@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <title>{#mztupload_dlg.uploadfile}</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">        
+        <link rel="stylesheet" href="css/mztupload_src.css" />
+        <script type="text/javascript" src="../../tiny_mce_popup.js"></script>
+        <script type="text/javascript" src="js/mztupload.js"></script>
+    </head>
+    <body>
+        <fieldset id="mzt_upload_process"><legend>uploading...</legend><img src="imgs/loader.gif" /></fieldset>
+        <fieldset id="mzt_upload">
+            <legend>{#mztupload_dlg.uploadfile}</legend>
+            <form method="post" enctype="multipart/form-data" action="upload.php" target="upload_target" onsubmit="return mztupload_start_upload(this);">
+                <table>
+                    <tr>
+                        <td colspan="2">{#mztupload_dlg.please_selected}:</td>
+                    </tr>
+                    <tr>
+                        <td class="td_1">
+                            <input type="file" name="file" class="text_file" size="25" ondblclick="alert(this.value)" />
+                        </td>
+                        <td class="td_2">
+                            <input type="submit" value="{#mztupload_dlg.start_upload}" />&nbsp;&nbsp;&nbsp;<input type="button" value="{#mztupload_dlg.close_window}" onclick="tinyMCEPopup.close()" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <h5 class="h_font">{#mztupload_dlg.upload_know}：</h5>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="td_say">
+                            <fieldset>
+                                <legend>{#mztupload_dlg.upload_ok_type}</legend>
+                                <ol>
+                                    <li>{#mztupload_dlg.useing_image_file}&nbsp;(&nbsp;jpg/jpeg、gif、bmp、png&nbsp;)</li>
+                                    <li>{#mztupload_dlg.word_file}&nbsp;(&nbsp;doc、docx&nbsp;)</li>
+                                    <li>{#mztupload_dlg.else_file}&nbsp;(&nbsp;rar、zip、pdf&nbsp;)</li>
+                                </ol>
+                            </fieldset>
+                            <span class="span_jg">{#mztupload_dlg.file_size}:<span class="max_num">2MB(2048kb)</span></span>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </fieldset>
+        <iframe id="upload_target" name="upload_target" src="#" style="width:0;height:0;border:0px solid #fff;"></iframe>
+    </body>
+</html>

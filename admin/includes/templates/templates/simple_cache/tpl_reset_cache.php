@@ -1,0 +1,1 @@
+<?php echo (isset($file_counter) && $file_counter >0) ? $file_counter : 0 ?> file(s) removed.
